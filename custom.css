@@ -1,0 +1,1502 @@
+@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@latest/custom.min.css");
+
+/* Define Table Borders */
+table.mytable {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.mytable td {
+  text-align: center;
+  vertical-align: middle;
+  border-color: hsl(219, 7%, 91%);
+  border-style: solid;
+  border-width: 1px;
+}
+
+table.mytable th {
+  text-align: center;
+  vertical-align: middle;
+  border-color: hsl(219, 7%, 91%);
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Nord Theme */
+
+:root {
+  --bg-black: hsl(220, 28%, 18%);
+  --bg-white: hsl(218, 3%, 96%);
+  --bg-grey-50: hsl(216, 17%, 52%);
+  --bg-grey-100: hsl(216, 17%, 50%);
+  --bg-grey-200: hsl(216, 17%, 48%);
+  --bg-grey-300: hsl(216, 17%, 46%);
+  --bg-grey-400: hsl(216, 17%, 44%);
+  --bg-grey-500: hsl(216, 17%, 42%);
+  --bg-grey-600: hsl(216, 17%, 40%);
+  --bg-grey-700: hsl(216, 17%, 38%);
+  --bg-grey-800: hsl(216, 17%, 36%);
+  --bg-grey-900: hsl(216, 17%, 34%);
+  --bg-red-50: hsl(354, 49%, 85%);
+  --bg-red-100: hsl(354, 49%, 83%);
+  --bg-red-200: hsl(354, 49%, 81%);
+  --bg-red-300: hsl(354, 49%, 79%);
+  --bg-red-400: hsl(354, 49%, 77%);
+  --bg-red-500: hsl(354, 49%, 75%);
+  --bg-red-600: hsl(354, 49%, 73%);
+  --bg-red-700: hsl(354, 49%, 71%);
+  --bg-red-800: hsl(354, 49%, 69%);
+  --bg-red-900: hsl(354, 49%, 67%);
+  --bg-green-50: hsl(92, 26%, 85%);
+  --bg-green-100: hsl(92, 26%, 83%);
+  --bg-green-200: hsl(92, 26%, 81%);
+  --bg-green-300: hsl(92, 26%, 79%);
+  --bg-green-400: hsl(92, 26%, 77%);
+  --bg-green-500: hsl(92, 26%, 75%);
+  --bg-green-600: hsl(179, 24%, 73%);
+  --bg-green-700: hsl(179, 24%, 71%);
+  --bg-green-800: hsl(179, 24%, 69%);
+  --bg-green-900: hsl(179, 24%, 67%);
+  --bg-blue-50: hsl(193, 35%, 92%);
+  --bg-blue-100: hsl(193, 35%, 90%);
+  --bg-blue-200: hsl(193, 35%, 88%);
+  --bg-blue-300: hsl(193, 35%, 86%);
+  --bg-blue-400: hsl(193, 35%, 84%);
+  --bg-blue-500: hsl(193, 35%, 82%);
+  --bg-blue-600: hsl(193, 35%, 80%);
+  --bg-blue-700: hsl(193, 35%, 78%);
+  --bg-blue-800: hsl(193, 35%, 76%);
+  --bg-blue-900: hsl(193, 35%, 74%);
+  --bg-indigo-50: hsl(213, 35%, 79%);
+  --bg-indigo-100: hsl(213, 35%, 77%);
+  --bg-indigo-200: hsl(213, 35%, 75%);
+  --bg-indigo-300: hsl(213, 35%, 73%);
+  --bg-indigo-400: hsl(213, 35%, 71%);
+  --bg-indigo-500: hsl(213, 35%, 69%);
+  --bg-indigo-600: hsl(213, 35%, 67%);
+  --bg-indigo-700: hsl(213, 35%, 65%);
+  --bg-indigo-800: hsl(213, 35%, 63%);
+  --bg-indigo-900: hsl(213, 35%, 61%);
+  --bg-purple-50: hsl(252, 28%, 97%);
+  --bg-purple-100: hsl(252, 28%, 95%);
+  --bg-purple-200: hsl(252, 28%, 93%);
+  --bg-purple-300: hsl(252, 28%, 91%);
+  --bg-purple-400: hsl(252, 28%, 89%);
+  --bg-purple-500: hsl(252, 28%, 77%);
+  --bg-purple-600: hsl(252, 28%, 75%);
+  --bg-purple-700: hsl(252, 28%, 73%);
+  --bg-purple-800: hsl(252, 28%, 71%);
+  --bg-purple-900: hsl(252, 28%, 57%);
+  --bg-pink-50: hsl(311, 21%, 91%);
+  --bg-pink-100: hsl(311, 21%, 89%);
+  --bg-pink-200: hsl(311, 21%, 87%);
+  --bg-pink-300: hsl(311, 21%, 85%);
+  --bg-pink-400: hsl(311, 21%, 83%);
+  --bg-pink-500: hsl(311, 21%, 71%);
+  --bg-pink-600: hsl(311, 21%, 69%);
+  --bg-pink-700: hsl(311, 21%, 67%);
+  --bg-pink-800: hsl(311, 21%, 65%);
+  --bg-pink-900: hsl(311, 21%, 51%);
+  --bg-yellow-50: hsl(40, 57%, 75%);
+  --bg-yellow-100: hsl(40, 57%, 73%);
+  --bg-yellow-200: hsl(40, 57%, 71%);
+  --bg-yellow-300: hsl(40, 57%, 69%);
+  --bg-yellow-400: hsl(40, 57%, 67%);
+  --bg-yellow-500: hsl(40, 57%, 65%);
+  --bg-yellow-600: hsl(40, 57%, 63%);
+  --bg-yellow-700: hsl(40, 57%, 61%);
+  --bg-yellow-800: hsl(40, 57%, 59%);
+  --bg-yellow-900: hsl(40, 57%, 57%);
+
+  --color-black: hsl(220, 28%, 18%);
+  --color-white: hsl(218, 3%, 96%);
+  --color-grey-50: hsl(216, 17%, 52%);
+  --color-grey-100: hsl(216, 17%, 50%);
+  --color-grey-200: hsl(216, 17%, 48%);
+  --color-grey-300: hsl(216, 17%, 46%);
+  --color-grey-400: hsl(216, 17%, 44%);
+  --color-grey-500: hsl(216, 17%, 42%);
+  --color-grey-600: hsl(216, 17%, 40%);
+  --color-grey-700: hsl(216, 17%, 38%);
+  --color-grey-800: hsl(216, 17%, 36%);
+  --color-grey-900: hsl(216, 17%, 34%);
+  --color-red-50: hsl(354, 49%, 85%);
+  --color-red-100: hsl(354, 49%, 83%);
+  --color-red-200: hsl(354, 49%, 81%);
+  --color-red-300: hsl(354, 49%, 79%);
+  --color-red-400: hsl(354, 49%, 77%);
+  --color-red-500: hsl(354, 49%, 75%);
+  --color-red-600: hsl(354, 49%, 73%);
+  --color-red-700: hsl(354, 49%, 71%);
+  --color-red-800: hsl(354, 49%, 69%);
+  --color-red-900: hsl(354, 49%, 67%);
+  --color-green-50: hsl(92, 26%, 85%);
+  --color-green-100: hsl(92, 26%, 83%);
+  --color-green-200: hsl(92, 26%, 81%);
+  --color-green-300: hsl(92, 26%, 79%);
+  --color-green-400: hsl(92, 26%, 77%);
+  --color-green-500: hsl(92, 26%, 75%);
+  --color-green-600: hsl(179, 24%, 73%);
+  --color-green-700: hsl(179, 24%, 71%);
+  --color-green-800: hsl(179, 24%, 69%);
+  --color-green-900: hsl(179, 24%, 67%);
+  --color-blue-50: hsl(193, 35%, 92%);
+  --color-blue-100: hsl(193, 35%, 90%);
+  --color-blue-200: hsl(193, 35%, 88%);
+  --color-blue-300: hsl(193, 35%, 86%);
+  --color-blue-400: hsl(193, 35%, 84%);
+  --color-blue-500: hsl(193, 35%, 82%);
+  --color-blue-600: hsl(193, 35%, 80%);
+  --color-blue-700: hsl(193, 35%, 78%);
+  --color-blue-800: hsl(193, 35%, 76%);
+  --color-blue-900: hsl(193, 35%, 74%);
+  --color-indigo-50: hsl(213, 35%, 79%);
+  --color-indigo-100: hsl(213, 35%, 77%);
+  --color-indigo-200: hsl(213, 35%, 75%);
+  --color-indigo-300: hsl(213, 35%, 73%);
+  --color-indigo-400: hsl(213, 35%, 71%);
+  --color-indigo-500: hsl(213, 35%, 69%);
+  --color-indigo-600: hsl(213, 35%, 67%);
+  --color-indigo-700: hsl(213, 35%, 65%);
+  --color-indigo-800: hsl(213, 35%, 63%);
+  --color-indigo-900: hsl(213, 35%, 61%);
+  --color-purple-50: hsl(252, 28%, 97%);
+  --color-purple-100: hsl(252, 28%, 95%);
+  --color-purple-200: hsl(252, 28%, 93%);
+  --color-purple-300: hsl(252, 28%, 91%);
+  --color-purple-400: hsl(252, 28%, 89%);
+  --color-purple-500: hsl(252, 28%, 77%);
+  --color-purple-600: hsl(252, 28%, 75%);
+  --color-purple-700: hsl(252, 28%, 73%);
+  --color-purple-800: hsl(252, 28%, 71%);
+  --color-purple-900: hsl(252, 28%, 57%);
+  --color-pink-50: hsl(311, 21%, 91%);
+  --color-pink-100: hsl(311, 21%, 89%);
+  --color-pink-200: hsl(311, 21%, 87%);
+  --color-pink-300: hsl(311, 21%, 85%);
+  --color-pink-400: hsl(311, 21%, 83%);
+  --color-pink-500: hsl(311, 21%, 71%);
+  --color-pink-600: hsl(311, 21%, 69%);
+  --color-pink-700: hsl(311, 21%, 67%);
+  --color-pink-800: hsl(311, 21%, 65%);
+  --color-pink-900: hsl(311, 21%, 51%);
+  --color-yellow-50: hsl(40, 57%, 75%);
+  --color-yellow-100: hsl(40, 57%, 73%);
+  --color-yellow-200: hsl(40, 57%, 71%);
+  --color-yellow-300: hsl(40, 57%, 69%);
+  --color-yellow-400: hsl(40, 57%, 67%);
+  --color-yellow-500: hsl(40, 57%, 65%);
+  --color-yellow-600: hsl(40, 57%, 63%);
+  --color-yellow-700: hsl(40, 57%, 61%);
+  --color-yellow-800: hsl(40, 57%, 59%);
+  --color-yellow-900: hsl(40, 57%, 57%);
+}
+
+.white-theme,
+.light-theme,
+.dark-theme,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  --ct-primary-color: rgba(143, 188, 187, 1);
+  --ct-secondary-color: rgba(136, 192, 208, 1);
+  --ct-warning-color: rgba(208, 135, 112, 1);
+  --ct-error-color: rgba(191, 97, 106, 1);
+  --ct-success-color: rgba(163, 190, 140, 1);
+  --ct-highlight-color: rgba(235, 203, 139, 1);
+  --color-level-1: rgba(46, 52, 64, 1);
+  --color-level-2: rgba(59, 66, 82, 1);
+  --color-level-3: rgba(67, 76, 94, 1);
+  --color-level-4: rgba(76, 86, 106, 1);
+  --color-level-5: rgba(88, 101, 126, 1);
+  --color-level-6: rgba(96, 110, 140, 1);
+  --ls-primary-background-color: rgba(46, 52, 64, 1);
+  --ls-secondary-background-color: rgba(59, 66, 82, 1);
+  --ls-tertiary-background-color: rgba(67, 76, 94, 1);
+  --ls-quaternary-background-color: rgba(76, 86, 106, 1);
+  --ls-border-color: rgba(76, 86, 106, 1);
+  --ls-table-tr-even-background-color: rgba(59, 66, 82, 1);
+  --ls-primary-text-color: rgba(236, 239, 244, 1);
+  --ls-secondary-text-color: rgba(229, 233, 240, 1);
+  --ct-bold-color: rgba(216, 222, 233, 1);
+  --ls-link-text-color: rgba(143, 188, 187, 1);
+  --ls-link-ref-text-color: rgba(136, 192, 208, 1);
+  --ls-link-ref-text-hover-color: rgba(129, 161, 193, 1);
+  --ls-active-primary-color: rgba(136, 192, 208, 1);
+  --ls-active-secondary-color: rgba(29, 161, 193, 1);
+  --ls-external-link-color: var(--ct-secondary-color);
+  --ls-guideline-color: rgba(67, 76, 94, 1);
+  --ls-block-bullet-color: rgba(76, 86, 106, 1);
+  --ls-bullet-closed-color: var(--ls-secondary-text-color);
+  --ls-block-bullet-border-color: rgba(76, 86, 106, 1);
+  --ct-block-arrow-color: rgba(216, 222, 233, 1);
+  --ct-page-reference-color: var(--ls-active-primary-color);
+  --ls-icon-color: var(--ls-link-text-color);
+  --ct-block-reference-background: rgba(94, 129, 172, 0.2);
+  --ct-block-reference-background-hover: rgba(94, 129, 172, 0.3);
+  --ls-page-properties-background-color: rgba(46, 52, 64, 1);
+  --ls-scrollbar-foreground-color: rgba(59, 66, 82, 1);
+  --ls-scrollbar-background-color: rgba(46, 52, 64, 1);
+  --ls-scrollbar-thumb-hover-color: rgba(129, 161, 193, 0.2);
+  --ls-cloze-text-color: rgba(163, 190, 140, 1);
+  --ls-search-icon-color: var(--ls-primary-text-color);
+  --ls-search-icon-hover-color: var(--ls-secondary-text-color);
+  --ls-a-chosen-bg: var(--ls-quaternary-background-color);
+  --ls-pie-bg-color: rgba(59, 66, 82, 1);
+  --ls-pie-fg-color: rgba(76, 86, 106, 1);
+  --ls-highlight-color-gray: var(--bg-grey-500);
+  --ls-highlight-color-red: var(--bg-red-500);
+  --ls-highlight-color-yellow: var(--bg-yellow-500);
+  --ls-highlight-color-green: rgba(163, 190, 140, 1);
+  --ls-highlight-color-blue: rgba(129, 161, 193, 1);
+  --ls-highlight-color-purple: hsl(252, 28%, 63%);
+  --ls-highlight-color-pink: rgba(180, 142, 173, 1);
+  --ls-error-text-color: rgba(191, 97, 106, 1);
+  --ls-success-color: rgba(163, 190, 140, 1);
+  --ls-warning-color: rgba(208, 135, 112, 1);
+  --ls-error-color: rgba(191, 97, 106, 1);
+  --ls-error-background-color: rgba(46, 52, 64, 1);
+  --ls-warning-text-color: rgba(208, 135, 112, 1);
+  --ls-warning-background-color: rgba(46, 52, 64, 1);
+  --ls-success-text-color: rgba(163, 190, 140, 1);
+  --ls-success-background-color: rgba(46, 52, 64, 1);
+  --ls-focus-ring-color: rgba(18, 98, 119, 0.5);
+  --ls-header-button-background: rgba(216, 222, 233, 1);
+  --ls-secondary-border-color: rgba(94, 129, 172, 1);
+  --ls-tertiary-border-color: rgba(0, 2, 0, 0.1);
+  --ls-block-properties-background-color: rgba(48, 54, 67, 1);
+  --ls-block-ref-link-text-color: rgba(136, 192, 208, 1);
+  --ls-selection-color: rgba(46, 52, 64, 1);
+  --ls-selection-background-color: rgba(129, 161, 193, 1);
+  --ls-selection-text-color: var(--text-primary-color);
+  --ls-page-checkbox-color: rgba(136, 192, 208, 1);
+  --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+  --ls-page-blockquote-color: var(--ls-primary-text-color);
+  --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
+  --ls-page-blockquote-border-color: var(--ls-border-color);
+  --ls-page-mark-color: rgba(46, 52, 64, 1);
+  --ls-page-mark-bg-color: rgba(236, 239, 244, 1);
+  --ls-page-inline-code-color: rgba(216, 222, 233, 1);
+  --ls-page-inline-code-bg-color: rgba(59, 66, 82, 1);
+  --ls-title-text-color: rgba(216, 222, 233, 1);
+  --ls-link-text-hover-color: var(--ls-active-secondary-color);
+  --ls-tag-text-color: var(--ls-link-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-header-bg-color: var(--ls-primary-background-color);
+  --ls-menu-hover-color: var(--ls-secondary-background-color);
+  --ls-block-highlight-color: rgba(59, 66, 82, 0.85);
+}
+
+.cp__header,
+.cp__right-sidebar-topbar {
+  background: var(--ls-primary-background-color);
+}
+
+.cp__header::after,
+.cp__right-sidebar-topbar::after {
+  display: none;
+}
+
+.left-sidebar-inner {
+  background-color: var(--ls-primary-background-color);
+}
+
+.block-control:hover svg {
+  filter: drop-shadow(2px 4px 6px hsl(220, 28%, 25%));
+}
+
+/* Makes texts in bg always readable */
+.with-bg-color * {
+  color: hsl(218, 3%, 96%) !important;
+  border-color: hsl(218, 3%, 96%) !important;
+}
+
+/* Progress bar */
+progress {
+  border: 1px solid hsl(220, 28%, 25%);
+}
+
+.tippy-tooltip > .tippy-tooltip-content {
+  overflow: hidden;
+  background: var(--ls-primary-background-color);
+  border: 2px solid var(--ls-border-color);
+  border-radius: 8px;
+}
+
+/* Page preview title */
+.tippy-wrapper > :is(div:first-child, h2:first-child, .block-parents) {
+  background: var(--ls-primary-background-color);
+  color: hsl(218, 27%, 94%);
+  border: 2px solid var(--ls-border-color);
+  /* disable page name */
+  display: none;
+}
+
+a[priority="A"]::before,
+a.priority[href="#/page/A" i]:before {
+  background: var(--ct-warning-color);
+  color: var(--ls-secondary-text-color);
+}
+
+a[priority="B"]::before,
+a.priority[href="#/page/B" i]:before {
+  background: var(--ct-highlight-color);
+  color: var(--ls-secondary-text-color);
+}
+
+a[priority="C"]::before,
+a.priority[href="#/page/C" i]:before {
+  background: var(--ct-success-color);
+  color: var(--ls-secondary-text-color);
+}
+
+.graph-filters {
+  border: 2px solid var(--ls-border-color);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.graph-filters li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cp__palette-main .menu-link .type-icon.highlight,
+.cp__select-main .menu-link .type-icon.highlight {
+  border-color: var(--ls-selection-background-color);
+  color: var(--ls-selection-text-color);
+}
+
+.bullet-container.bullet-closed .bullet {
+  background-color: rgba(76, 86, 106, 1);
+  /* Nord color: hsl(220, 28%, 42%) */
+  border: 1px solid rgba(216, 222, 233, 0.6);
+  /* Nord color: hsl(179, 24%, 74%) with reduced opacity */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* Adjust the box-shadow to create a subtle 3D effect */
+}
+
+.form-checkbox:checked,
+.form-checkbox:checked:focus {
+  background-color: rgba(136, 192, 208, 1) !important;
+}
+
+/* CodeMirror */
+/* Color scheme for code-mirror */
+.cm-s-solarized.CodeMirror,
+.cm-s-solarized.cm-s-dark {
+  color: #d8dee9;
+  background-color: #2e3440;
+  text-shadow: #2e3440 0 1px;
+}
+
+.cm-s-solarized.cm-s-light {
+  background-color: #f0f3f7;
+  color: #434c5e;
+  text-shadow: #eceff4 0 1px;
+}
+
+.cm-s-solarized div.CodeMirror-selected {
+  background: #434c5e;
+}
+.cm-s-solarized .CodeMirror-line::selection,
+.cm-s-solarized .CodeMirror-line > span::selection,
+.cm-s-solarized .CodeMirror-line > span > span::selection {
+  background: #3b4252;
+}
+.cm-s-solarized .CodeMirror-line::-moz-selection,
+.cm-s-solarized .CodeMirror-line > span::-moz-selection,
+.cm-s-solarized .CodeMirror-line > span > span::-moz-selection {
+  background: #3b4252;
+}
+
+.cm-s-solarized .CodeMirror-gutters {
+  background: #2e3440;
+  border-right: 0px;
+}
+.cm-s-solarized .CodeMirror-guttermarker {
+  color: #4c566a;
+}
+.cm-s-solarized .CodeMirror-guttermarker-subtle {
+  color: #4c566a;
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-linenumber,
+.cm-s-solarized .CodeMirror-linenumber {
+  color: #7b88a1;
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-cursor,
+.cm-s-solarized .CodeMirror-cursor {
+  border-left: 1px solid #f8f8f0;
+}
+
+.cm-s-solarized.cm-s-dark .cm-comment,
+.cm-s-solarized .cm-comment {
+  color: #7b88a1;
+}
+
+.cm-s-solarized.cm-s-dark .cm-atom,
+.cm-s-solarized .cm-atom {
+  color: #b48ead;
+}
+
+.cm-s-solarized.cm-s-dark .cm-number,
+.cm-s-solarized .cm-number {
+  color: #b48ead;
+}
+
+.cm-s-solarized.cm-s-dark .cm-comment.cm-attribute,
+.cm-s-solarized .cm-comment.cm-attribute {
+  color: #97b757;
+}
+.cm-s-solarized .cm-comment.cm-def {
+  color: #bc9262;
+}
+.cm-s-solarized .cm-comment.cm-tag {
+  color: #bc6283;
+}
+.cm-s-solarized .cm-comment.cm-type {
+  color: #5998a6;
+}
+
+.cm-s-solarized.cm-s-dark .cm-property,
+.cm-s-solarized.cm-s-dark .cm-attribute,
+.cm-s-solarized .cm-property,
+.cm-s-solarized .cm-attribute {
+  color: #8fbcbb;
+}
+
+.cm-s-solarized.cm-s-dark .cm-operator,
+.cm-s-solarized .cm-operator {
+  color: #5e81ac;
+}
+
+.cm-s-solarized.cm-s-dark .cm-keyword,
+.cm-s-solarized .cm-keyword {
+  color: #81a1c1;
+}
+
+.cm-s-solarized.cm-s-dark .cm-builtin,
+.cm-s-solarized .cm-builtin {
+  color: #81a1c1;
+}
+
+.cm-s-solarized.cm-s-dark .cm-string,
+.cm-s-solarized .cm-string {
+  color: #a3be8c;
+}
+
+.cm-s-solarized.cm-s-dark .cm-string-2,
+.cm-s-solarized .cm-string-2 {
+  color: #ebcb8b;
+}
+
+.cm-s-solarized.cm-s-dark .cm-meta,
+.cm-s-solarized .cm-meta {
+  color: #a3be8c;
+}
+
+.cm-s-solarized.cm-s-dark .cm-qualifier,
+.cm-s-solarized .cm-qualifier {
+  color: #ebcb8b;
+}
+
+.cm-s-solarized.cm-s-dark .cm-variable,
+.cm-s-solarized .cm-variable {
+  color: #d8dee9;
+}
+
+.cm-s-solarized.cm-s-dark .cm-variable-2,
+.cm-s-solarized .cm-variable-2 {
+  color: #d8dee9;
+}
+
+.cm-s-solarized.cm-s-dark .cm-variable-3,
+.cm-s-solarized.cm-s-dark .cm-type,
+.cm-s-solarized .cm-variable-3,
+.cm-s-solarized .cm-type {
+  color: #d8dee9;
+}
+
+.cm-s-solarized.cm-s-dark .cm-def,
+.cm-s-solarized .cm-def {
+  color: #8fbcbb;
+}
+
+.cm-s-solarized.cm-s-dark .cm-bracke,
+.cm-s-solarized .cm-bracket {
+  color: #81a1c1;
+}
+
+.cm-s-solarized.cm-s-dark .cm-tag,
+.cm-s-solarized .cm-tag {
+  color: #bf616a;
+}
+
+.cm-s-solarized.cm-s-dark .cm-header,
+.cm-s-solarized .cm-header {
+  color: #b48ead;
+}
+
+.cm-s-solarized.cm-s-dark .cm-quote,
+.cm-s-solarized .cm-quote {
+  color: #e5e9f0;
+}
+
+.cm-s-solarized.cm-s-dark .cm-link,
+.cm-s-solarized .cm-link {
+  color: #b48ead;
+}
+
+.cm-s-solarized.cm-s-dark .cm-error,
+.cm-s-solarized .cm-error {
+  background: #bf616a;
+  color: #f8f8f0;
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background,
+.cm-s-solarized .CodeMirror-activeline-background {
+  background: #3b4252;
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-matchingbracket,
+.cm-s-solarized .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: #eceff4 !important;
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-nonmatchingbracket,
+.cm-s-solarized .CodeMirror-nonmatchingbracket {
+  color: #bf616a;
+}
+
+/* PDF.js */
+
+.bg-black {
+  background-color: hsl(220, 28, 18);
+}
+
+.bg-white {
+  background-color: hsl(218, 3%, 96%);
+}
+
+.bg-grey-50 {
+  background-color: hsl(216, 17%, 52%);
+}
+
+.bg-grey-100 {
+  background-color: hsl(216, 17%, 50%);
+}
+
+.bg-grey-200 {
+  background-color: hsl(216, 17%, 48%);
+}
+
+.bg-grey-300 {
+  background-color: hsl(216, 17%, 46%);
+}
+
+.bg-grey-400 {
+  background-color: hsl(216, 17%, 44%);
+}
+
+.bg-grey-500 {
+  background-color: hsl(216, 17%, 42%);
+}
+
+.bg-grey-600 {
+  background-color: hsl(216, 17%, 40%);
+}
+
+.bg-grey-700 {
+  background-color: hsl(216, 17%, 38%);
+}
+
+.bg-grey-800 {
+  background-color: hsl(216, 17%, 36%);
+}
+
+.bg-grey-900 {
+  background-color: hsl(216, 17%, 34%);
+}
+
+.bg-red-50 {
+  background-color: hsl(354, 49%, 85%);
+}
+
+.bg-red-100 {
+  background-color: hsl(354, 49%, 83%);
+}
+
+.bg-red-200 {
+  background-color: hsl(354, 49%, 81%);
+}
+
+.bg-red-300 {
+  background-color: hsl(354, 49%, 79%);
+}
+
+.bg-red-400 {
+  background-color: hsl(354, 49%, 77%);
+}
+
+.bg-red-500 {
+  /* Nord Red */
+  background-color: hsl(354, 49%, 75%);
+}
+
+.bg-red-600 {
+  background-color: hsl(354, 49%, 73%);
+}
+
+.bg-red-700 {
+  background-color: hsl(354, 49%, 71%);
+}
+
+.bg-red-800 {
+  background-color: hsl(354, 49%, 69%);
+}
+
+.bg-red-900 {
+  background-color: hsl(354, 49%, 67%);
+}
+
+.bg-green-50 {
+  background-color: hsl(92, 26%, 85%);
+}
+
+.bg-green-100 {
+  background-color: hsl(92, 26%, 83%);
+}
+
+.bg-green-200 {
+  background-color: hsl(92, 26%, 81%);
+}
+
+.bg-green-300 {
+  background-color: hsl(92, 26%, 79%);
+}
+
+.bg-green-400 {
+  background-color: hsl(92, 26%, 77%);
+}
+
+.bg-green-500 {
+  background-color: hsl(92, 26%, 75%);
+}
+
+.bg-green-600 {
+  background-color: hsl(179, 24%, 73%);
+}
+
+.bg-green-700 {
+  background-color: hsl(179, 24%, 71%);
+}
+
+.bg-green-800 {
+  background-color: hsl(179, 24%, 69%);
+}
+
+.bg-green-900 {
+  background-color: hsl(179, 24%, 67%);
+}
+
+.bg-blue-50 {
+  background-color: hsl(193, 35%, 92%);
+}
+
+.bg-blue-100 {
+  background-color: hsl(193, 35%, 90%);
+}
+
+.bg-blue-200 {
+  background-color: hsl(193, 35%, 88%);
+}
+
+.bg-blue-300 {
+  background-color: hsl(193, 35%, 86%);
+}
+
+.bg-blue-400 {
+  background-color: hsl(193, 35%, 84%);
+}
+
+.bg-blue-500 {
+  /* Nord Blue */
+  background-color: hsl(193, 35%, 82%);
+}
+
+.bg-blue-600 {
+  background-color: hsl(193, 35%, 80%);
+}
+
+.bg-blue-700 {
+  background-color: hsl(193, 35%, 78%);
+}
+
+.bg-blue-800 {
+  background-color: hsl(193, 35%, 76%);
+}
+
+.bg-blue-900 {
+  background-color: hsl(193, 35%, 74%);
+}
+
+.bg-indigo-50 {
+  background-color: hsl(213, 35%, 79%);
+}
+
+.bg-indigo-100 {
+  background-color: hsl(213, 35%, 77%);
+}
+
+.bg-indigo-200 {
+  background-color: hsl(213, 35%, 75%);
+}
+
+.bg-indigo-300 {
+  background-color: hsl(213, 35%, 73%);
+}
+
+.bg-indigo-400 {
+  background-color: hsl(213, 35%, 71%);
+}
+
+.bg-indigo-500 {
+  /* Nord Indigo */
+  background-color: hsl(223, 35%, 69%);
+}
+
+.bg-indigo-600 {
+  background-color: hsl(220, 16%, 36%);
+}
+
+.bg-indigo-700 {
+  background-color: hsl(213, 35%, 65%);
+}
+
+.bg-indigo-800 {
+  background-color: hsl(213, 35%, 63%);
+}
+
+.bg-indigo-900 {
+  background-color: hsl(213, 35%, 61%);
+}
+
+.bg-purple-50 {
+  background-color: hsl(252, 28%, 97%);
+}
+
+.bg-purple-100 {
+  background-color: hsl(252, 28%, 95%);
+}
+
+.bg-purple-200 {
+  background-color: hsl(252, 28%, 93%);
+}
+
+.bg-purple-300 {
+  background-color: hsl(252, 28%, 91%);
+}
+
+.bg-purple-400 {
+  background-color: hsl(252, 28%, 89%);
+}
+
+.bg-purple-500 {
+  /* Nord Purple */
+  background-color: hsl(252, 28%, 77%);
+}
+
+.bg-purple-600 {
+  background-color: hsl(252, 28%, 75%);
+}
+
+.bg-purple-700 {
+  background-color: hsl(252, 28%, 73%);
+}
+
+.bg-purple-800 {
+  background-color: hsl(252, 28%, 71%);
+}
+
+.bg-purple-900 {
+  background-color: hsl(252, 28%, 57%);
+}
+
+.bg-pink-50 {
+  background-color: hsl(311, 21%, 91%);
+}
+
+.bg-pink-100 {
+  background-color: hsl(311, 21%, 89%);
+}
+
+.bg-pink-200 {
+  background-color: hsl(311, 21%, 87%);
+}
+
+.bg-pink-300 {
+  background-color: hsl(311, 21%, 85%);
+}
+
+.bg-pink-400 {
+  background-color: hsl(311, 21%, 83%);
+}
+
+.bg-pink-500 {
+  /* Nord Pink */
+  background-color: hsl(311, 21%, 71%);
+}
+
+.bg-pink-600 {
+  background-color: hsl(311, 21%, 69%);
+}
+
+.bg-pink-700 {
+  background-color: hsl(311, 21%, 67%);
+}
+
+.bg-pink-800 {
+  background-color: hsl(311, 21%, 65%);
+}
+
+.bg-pink-900 {
+  background-color: hsl(311, 21%, 51%);
+}
+
+.bg-yellow-50 {
+  background-color: hsl(40, 57%, 75%);
+}
+
+.bg-yellow-100 {
+  background-color: hsl(40, 57%, 73%);
+}
+
+.bg-yellow-200 {
+  background-color: hsl(40, 57%, 71%);
+}
+
+.bg-yellow-300 {
+  background-color: hsl(40, 57%, 69%);
+}
+
+.bg-yellow-400 {
+  background-color: hsl(40, 57%, 67%);
+}
+
+.bg-yellow-500 {
+  /* Nord Yellow */
+  background-color: hsl(40, 57%, 65%);
+}
+
+.bg-yellow-600 {
+  background-color: hsl(40, 57%, 63%);
+}
+
+.bg-yellow-700 {
+  background-color: hsl(40, 57%, 61%);
+}
+
+.bg-yellow-800 {
+  background-color: hsl(40, 57%, 59%);
+}
+
+.bg-yellow-900 {
+  background-color: hsl(40, 57%, 57%);
+}
+
+*,
+:after,
+:before {
+  --tw-ring-offset-color: hsl(222, 28%, 32%);
+  --tw-ring-color: hsl(220, 16%, 36%);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+}
+
+:root {
+  --ph-highlight-color-blue: hsl(210, 33%, 76%);
+  --ph-highlight-color-green: hsl(92, 26%, 75%);
+  --ph-highlight-color-red: hsl(354, 49%, 75%);
+  --ph-highlight-color-purple: hsl(311, 21%, 71%);
+  --ph-highlight-color-yellow: hsl(40, 41%, 92%);
+  --ph-link-color: hsl(193, 35%, 82%);
+  --ph-highlight-scroll-into-color: hsl(354, 49%, 75%);
+}
+
+.extensions__pdf-container[data-theme="dark"] {
+  background-color: var(--ls-primary-background-color);
+}
+
+.extensions__pdf-container *[data-color="yellow"] {
+  background-color: hsl(40, 57%, 75%);
+  border-color: hsl(40, 57%, 75%);
+}
+
+.extensions__pdf-container *[data-color="blue"] {
+  background-color: hsl(210, 33%, 76%);
+  border-color: hsl(210, 33%, 76%);
+}
+
+.extensions__pdf-container *[data-color="green"] {
+  background-color: hsl(92, 26%, 75%);
+  border-color: hsl(92, 26%, 75%);
+}
+
+.extensions__pdf-container *[data-color="red"] {
+  background-color: hsl(354, 49%, 75%);
+  border-color: hsl(354, 49%, 75%);
+}
+
+.extensions__pdf-container *[data-color="purple"] {
+  background-color: hsl(311, 21%, 71%);
+  border-color: hsl(311, 21%, 71%);
+}
+
+.extensions__pdf-toolbar > .inner > .r a.button {
+  color: hsl(219, 7%, 91%);
+  background-color: hsl(222, 28%, 32%);
+}
+
+.extensions__pdf-toolbar > .inner > .r a.button.is-active {
+  background-color: hsl(220, 28%, 25%);
+  border-bottom: 2px solid hsl(219, 7%, 91%);
+}
+
+.extensions__pdf-toolbar > .inner > .r a.button:hover {
+  background-color: hsl(220, 29%, 37%);
+}
+
+.extensions__pdf-pages {
+  background-color: hsl(220, 28%, 25%);
+}
+
+.extensions__pdf-pages > section > .inner > .r > a {
+  color: hsl(219, 7%, 91%);
+}
+
+.extensions__pdf-pages > section > .inner > .r > a:hover {
+  color: hsl(193, 35%, 82%);
+}
+
+.extensions__pdf-page {
+  background-color: hsl(220, 28%, 25%);
+  color: hsl(219, 7%, 91%);
+}
+
+.extensions__pdf-search > .searchBar {
+  background-color: hsl(222, 28%, 32%);
+  color: hsl(219, 7%, 91%);
+}
+
+.extensions__pdf-search > .searchBar > .inner input {
+  background-color: hsl(222, 28%, 32%);
+  color: hsl(219, 7%, 91%);
+}
+
+.extensions__pdf-search > .searchBar > .inner button {
+  color: hsl(219, 7%, 91%);
+  background-color: hsl(222, 28%, 32%);
+}
+
+.extensions__pdf-search > .searchBar > .inner button:hover {
+  background-color: hsl(220, 29%, 37%);
+}
+
+.extensions__pdf-annotations-note {
+  background-color: hsl(220, 29%, 37%);
+  color: hsl(218, 3%, 96%);
+}
+
+.extensions__pdf-annotations-note > .inner:hover {
+  background-color: hsl(220, 28%, 42%);
+}
+
+.xfaLayer .highlight.selected {
+  background-color: rgba(203, 223, 203, 1);
+}
+
+.xfaLayer ::-moz-selection {
+  background: hsl(220, 14%, 42%);
+}
+
+.xfaLayer ::selection {
+  background: hsl(220, 14%, 42%);
+}
+
+.linkAnnotation:hover a.internalLink {
+  background-color: hsl(220, 28%, 25%);
+  box-shadow: 0 0 2px 2px hsl(220, 28%, 25%);
+}
+
+.xfaLayer .highlight {
+  margin: -1px;
+  padding: 1px;
+  background-color: rgba(239, 203, 237, 1);
+  border-radius: 4px;
+}
+
+.annotationLayer .popupContent {
+  border-top: 1px solid rgba(51, 51, 51, 1);
+  margin-top: 2px;
+  padding-top: 2px;
+}
+
+.annotationLayer .popup {
+  position: absolute;
+  z-index: 200;
+  max-width: 20em;
+  background-color: hsl(218, 3%, 96%);
+  box-shadow: 0 2px 5px rgba(136, 136, 136, 1);
+  border-radius: 2px;
+  padding: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+  font: message-box;
+  font-size: 9px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.textLayer .highlight {
+  margin: -1px;
+  padding: 1px;
+  background-color: var(--bg-pink-500);
+  border-radius: 4px;
+}
+
+.extensions__pdf-container {
+  background-color: var(--ls-primary-background-color);
+}
+
+.extensions__pdf-container .extensions__pdf-toolbar .buttons {
+  background-color: var(--ls-primary-background-color);
+}
+
+.extensions__pdf-container[data-theme="light"] {
+  background-color: hsl(218, 3%, 96%);
+}
+
+.extensions__pdf-container[data-theme="dark"] {
+  background-color: var(--ls-primary-background-color);
+}
+
+.extensions__pdf-container[data-theme="dark"] .pdfViewer {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background: transparent;
+}
+
+.extensions__pdf-container[data-theme="dark"] .textLayer,
+.extensions__pdf-container[data-theme="dark"] .page {
+  background-color: #38404f;
+}
+
+.extensions__pdf-container[data-theme="dark"] .textLayer {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.extensions__pdf-container[data-theme="dark"] .extensions__pdf-toolbar {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgb(15 31 37) 100%
+  );
+}
+
+.extensions__pdf-outline-tabs {
+  border-bottom: 1px solid hsl(220, 28%, 42%);
+}
+
+.extensions__pdf-outline-tabs > .inner {
+  border: 1px solid hsl(220, 28%, 42%);
+  border-radius: 4px;
+  display: flex;
+}
+
+.extensions__pdf-outline-tabs button.active {
+  background-color: hsl(220, 28%, 42%);
+}
+
+.extensions__pdf-outline-tabs button {
+  color: hsl(218, 3%, 96%);
+}
+
+.extensions__pdf-highlights-list-item > h6 small {
+  border-color: hsl(218, 3%, 96%) !important;
+}
+
+.extensions__pdf-highlights-list-item > p {
+  color: #7b88a1;
+}
+
+.extensions__pdf-toolbar > .inner > .r a.button {
+  color: hsl(219, 7%, 91%);
+  background-color: var(--ls-primary-background-color);
+}
+
+.extensions__pdf-settings-item.theme-picker > button.dark {
+  background-color: var(--ls-primary-background-color);
+}
+
+.extensions__pdf-settings-item {
+  color: hsl(219, 7%, 91%);
+  display: flex;
+}
+
+.extensions__pdf-settings-item.toggle-input {
+  align-items: center;
+  border-top: 1px solid hsl(220, 28%, 42%);
+  font-size: 11px;
+  justify-content: space-between;
+  margin-top: 13px;
+  opacity: 0.8;
+  padding: 12px 9px 0;
+}
+
+button.active:hover {
+  color: hsl(219, 7%, 91%);
+}
+
+button:not(.active):hover {
+  color: hsl(218, 3%, 96%);
+  background-color: hsl(220, 16%, 46%);
+}
+
+.extensions__pdf-highlights-list-item.active {
+  background-color: hsl(220, 28%, 42%);
+  color: hsl(218, 3%, 96%);
+}
+
+.extensions__pdf-highlights-list-item,
+.extensions__pdf-outline-item > .inner > a {
+  background-color: transparent;
+  color: hsl(218, 5%, 94%);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.extensions__pdf-highlights-list-item.active:hover,
+.extensions__pdf-outline-item > .inner > a:hover,
+.extensions__pdf-highlights-list-item:hover,
+.extensions__pdf-highlights-list-item:hover p {
+  background-color: hsl(220, 14%, 42%);
+  color: hsl(218, 3%, 96%);
+}
+
+*::-webkit-scrollbar {
+  background-color: var(--ls-scrollbar-background-color) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--ls-scrollbar-foreground-color) !important;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--ls-scrollbar-thumb-hover-color) !important;
+}
+
+.extensions__pdf-hls-ctx-menu,
+.hls-popup-box {
+  background-color: hsl(222, 28%, 32%);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 hsl(218deg 20% 20% / 80%);
+  color: hsl(219, 7%, 91%);
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 9;
+}
+
+.extensions__pdf-hls-ctx-menu:after,
+.hls-popup-box:after {
+  border: 1px solid hsl(220, 28%, 42%);
+  border-radius: 10px;
+  bottom: -50%;
+  content: "";
+  left: -50%;
+  pointer-events: none;
+  position: absolute;
+  right: -50%;
+  top: -50%;
+  transform: scale(0.5);
+  transform-origin: center center;
+}
+
+.arrow {
+  margin-right: 8px;
+}
+
+.arrow svg {
+  fill: hsl(219, 7%, 91%);
+}
+
+.rotating-arrow {
+  padding-left: 6px;
+}
+
+.extensions__pdf-area-selection .shadow-rect {
+  background: hsl(40, 57%, 75%);
+}
+
+.ui__toggle.is-small [aria-checked="true"].wrapper {
+  background-color: hsl(210, 30%, 60%);
+}
+
+/* 
+ * whiteboards
+ */
+
+:root {
+  --ls-wb-stroke-color-gray: var(--bg-gray-800);
+  --ls-wb-stroke-color-red: var(--bg-red-800);
+  --ls-wb-stroke-color-yellow: var(--bg-yellow-800);
+  --ls-wb-stroke-color-green: var(--bg-green-800);
+  --ls-wb-stroke-color-blue: var(--bg-blue-800);
+  --ls-wb-stroke-color-purple: var(--bg-purple-800);
+  --ls-wb-stroke-color-pink: var(--bg-pink-800);
+  --ls-wb-stroke-color-default: var(--ls-secondary-border-color);
+  --ls-wb-text-color-default: var(--ls-primary-text-color);
+  --ls-wb-background-color-default: var(--ls-tertiary-background-color);
+}
+
+.dashboard-bg-card {
+  background-color: var(--ls-primary-background-color);
+  border: 2px solid var(--ls-border-color);
+  opacity: 0.3;
+}
+
+.dashboard-preview-card {
+  border: 2px solid var(--ls-border-color);
+}
+
+.dashboard-card:hover {
+  border: solid 2px var(--bg-blue-800);
+  border-radius: 8px;
+  margin: 0px 0;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  color: hsl(219, 28%, 88%);
+  box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1),
+    0 2px 4px -2px rgba(16, 24, 40, 0.06);
+}
+
+.dashboard-create-card {
+  align-items: center;
+  background-color: var(--ls-secondary-background-color);
+  border: 2px solid var(--ls-border-color);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  justify-content: center;
+  position: relative;
+}
+
+.dashboard-create-card:hover {
+  background-color: var(--ls-tertiary-background-color);
+  border: 2px solid var(--ls-border-color);
+  box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1),
+    0 2px 4px -2px rgba(16, 24, 40, 0.06);
+}
+
+.logseq-tldraw {
+  --color-panel: var(--ls-tertiary-background-color);
+  --color-panel-inverted: var(--ls-secondary-text-color);
+  --color-text: var(--ls-primary-text-color);
+  --color-text-inverted: var(--ls-tertiary-background-color);
+  --color-hover: var(--ls-secondary-background-color);
+  --color-selectedStroke: var(--color-indigo-900);
+  --color-selectedFill: var(--color-indigo-500);
+  --color-selectedContrast: #eceff4;
+  --shadow-small: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  backface-visibility: hidden;
+}
+
+.tl-color-bg .w-full.h-full.bg-grey-500 {
+  background-color: hsl(216, 9%, 52%);
+}
+
+.tl-color-bg .w-full.h-full.bg-red-500 {
+  background-color: var(--ls-highlight-color-red);
+}
+
+.tl-color-bg .w-full.h-full.bg-yellow-500 {
+  background-color: var(--ls-highlight-color-yellow);
+}
+
+.tl-color-bg .w-full.h-full.bg-green-500 {
+  background-color: var(--ls-highlight-color-green);
+}
+
+.tl-color-bg .w-full.h-full.bg-blue-500 {
+  background-color: var(--ls-highlight-color-blue);
+}
+
+.tl-color-bg .w-full.h-full.bg-purple-500 {
+  background-color: var(--ls-highlight-color-purple);
+}
+
+.tl-color-bg .w-full.h-full.bg-pink-500 {
+  background-color: var(--ls-highlight-color-pink);
+}
+
+.white-theme,
+.light-theme,
+.dark-theme,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  --ls-wb-background-color-gray: var(--bg-grey-800);
+  --ls-wb-background-color-red: rgba(194, 106, 112, 1);
+  --ls-wb-background-color-yellow: rgba(203, 144, 0, 1);
+  --ls-wb-background-color-green: rgba(77, 144, 112, 1);
+  --ls-wb-background-color-blue: rgba(94, 129, 172, 1);
+  --ls-wb-background-color-purple: rgba(109, 98, 151, 1);
+  --ls-wb-background-color-pink: rgba(123, 85, 116, 1);
+
+  --ls-wb-text-color-gray: var(--ls-highlight-color-gray);
+  --ls-wb-text-color-red: var(--ls-highlight-color-red);
+  --ls-wb-text-color-yellow: var(--ls-highlight-color-yellow);
+  --ls-wb-text-color-green: var(--ls-highlight-color-green);
+  --ls-wb-text-color-blue: var(--ls-highlight-color-blue);
+  --ls-wb-text-color-purple: var(--ls-highlight-color-purple);
+  --ls-wb-text-color-pink: var(--ls-highlight-color-pink);
+}
+
+/* All Pages */
+
+.cp__all_pages_table td > span {
+  --tw-text-opacity: 1;
+  color: hsl(218, 27%, 74%);
+}
+
+/* excalidraw */
+.excalidraw,
+.excalidraw.Appearance_dark {
+  --appearance-filter: none !important;
+  /* --appearance-filter: invert(93%) hue-rotate(180deg); */
+  --button-destructive-bg-color: rgba(194, 106, 112, 1) !important;
+  --button-destructive-color: var(--bg-red-500) !important;
+  --button-gray-1: var(--bg-grey-500) !important;
+  --button-gray-2: var(--bg-grey-600) !important;
+  --button-gray-3: var(--bg-grey-700) !important;
+  --button-special-active-bg-color: var(--ls-secondary-background-color);
+  --dialog-border-color: var(--ls-secondary-background-color) !important;
+  --dropdown-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path fill="#23f03e3e" d="M287 197 159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>') !important;
+  --focus-highlight-color: var(--bg-blue-500) !important;
+  --icon-fill-color: var(--ls-primary-text-color) !important;
+  --icon-green-fill-color: var(--bg-green-500) !important;
+  --input-bg-color: var(--ls-primary-background-color) !important;
+  --input-border-color: var(--ls-secondary-background-color) !important;
+  --input-hover-bg-color: var(--bg-blue-600) !important;
+  --input-label-color: var(--ls-secondary-text-color) !important;
+  --island-bg-color: var(--ct-primary-color) !important;
+  --keybinding-color: var(--bg-grey-500) !important;
+  --overlay-bg-color: var(--ls-secondary-background-color) !important;
+  --popup-bg-color: var(--ls-secondary-background-color) !important;
+  --popup-secondary-bg-color: var(--ls-tertiary-background-color) !important;
+  --popup-text-color: var(--ls-primary-text-color) !important;
+  --popup-text-inverted-color: var(--ls-primary-background-color) !important;
+  --select-highlight-color: var(--bg-blue-400) !important;
+  --shadow-island: 0 1px 5px rgba(0, 0, 0, 0.3) !important;
+  --text-primary-color: var(--ls-primary-text-color) !important;
+}
+
+.excalidraw,
+.excalidraw.Appearance_dark {
+  background: var(--ls-primary-background-color);
+}
+
+.excalidraw.Appearance_dark.Appearance_dark-background-none {
+  background: 0 0;
+}
+
+.excalidraw {
+  bottom: 0;
+  color: hsl(219, 7%, 91%);
+  display: flex;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+/* graph */
+
+.textLayer .highlight {
+  background-color: var(--bg-pink-500);
+}
+
+.textLayer .highlight.selected {
+  background-color: var(--bg-green-500);
+}
+.textLayer ::-moz-selection {
+  background: var(--bg-blue-500);
+}
+.textLayer ::selection {
+  background: var(--bg-blue-500);
+}
+.textLayer br::-moz-selection {
+  background: 0 0;
+}
+.textLayer br::selection {
+  background: 0 0;
+}
+
+:root {
+  --annotation-unfocused-field-background: url('data:image/svg+xml;charset=utf-8,<svg width="1" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0,54,255,.13)"/></svg>');
+}
+
+.annotationLayer .buttonWidgetAnnotation.pushButton > a:hover,
+.annotationLayer .linkAnnotation > a:hover {
+  background: var(--bg-yellow-500);
+  box-shadow: 0 2px 10px var(--bg-yellow-800);
+  opacity: 0.2;
+}
+
+.annotationLayer .popup {
+  word-wrap: break-word;
+  background-color: var(--bg-yellow-500);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px var(--bg-yellow-800);
+  cursor: pointer;
+  font: message-box;
+  font-size: 9px;
+  margin-left: 5px;
+  max-width: 20em;
+  padding: 6px;
+  position: absolute;
+  white-space: normal;
+  z-index: 200;
+}
+
+/* misc */
+.dark .dark\:text-gray-100 {
+  --tw-text-opacity: 1;
+  color: var(--bg-grey-100);
+}
+.dark .dark\:text-gray-200 {
+  --tw-text-opacity: 1;
+  color: var(--bg-grey-100);
+}
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: var(--bg-grey-100);
+}
+
+/* left sidebar create button */
+.left-sidebar-inner .create {
+  background-image: var(--ls-secondary-background-color);
+  color: var(--bg-grey-500);
+}
