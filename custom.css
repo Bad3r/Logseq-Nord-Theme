@@ -424,6 +424,11 @@ a.priority[href="#/page/C" i]:before {
   color: #7b88a1 !important;
 }
 
+.cm-s-solarized.cm-s-dark .CodeMirror-gutters,
+.cm-s-solarized .CodeMirror-gutters {
+  background: var(--ls-primary-background-color) !important;
+}
+
 .cm-s-solarized.cm-s-dark .CodeMirror-cursor,
 .cm-s-solarized .CodeMirror-cursor {
   border-left: 1px solid var(--bg-yellow-500) !important;
@@ -1499,4 +1504,22 @@ html[data-theme="dark"] {
 .left-sidebar-inner .create {
   background-image: var(--ls-secondary-background-color);
   color: var(--bg-grey-500);
+}
+
+/* Logseq Sync */
+.cp__file-sync-indicator-progress-pane
+  > .a
+  > .al
+  > :not([hidden])
+  ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  color: hsl(218, 27%, 94%);
+  margin-left: calc(0.5rem * (1 - var(--tw-space-x-reverse)));
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+}
+
+html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .a,
+html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
+  --tw-text-opacity: 1;
+  color: var(--ls-secondary-text-color);
 }
