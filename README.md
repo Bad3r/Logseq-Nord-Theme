@@ -1,6 +1,6 @@
 # Logseq Nord Theme 🏔️
 
-"Logseq Nord Theme" is a beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nordtheme.com/) color palette. It provides a clean, minimal, and professional look to your Logseq graph.
+A beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nordtheme.com/) color palette. It provides a clean, minimal, and professional look to your Logseq graph.
 
 ![logseq_nord_code](https://cdn.unsigned.sh/logseq_nord_code.png)
 ![logseq_nord_demo](https://cdn.unsigned.sh/logseq_nord_demo.png)
