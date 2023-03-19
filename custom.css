@@ -1523,3 +1523,23 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
   --tw-text-opacity: 1;
   color: var(--ls-secondary-text-color);
 }
+
+/* page reference & properties */
+
+.page-ref {
+  color: var(--ls-link-ref-text-color);
+}
+
+.page-property-key {
+  color: var(--ls-secondary-text-color);
+}
+
+.page-property-key:hover {
+  background: var(--ls-primary-background-color);
+  color: var(--ls-active-primary-color);
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: var(--bg-grey-400);
+}
