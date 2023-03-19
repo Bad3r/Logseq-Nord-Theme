@@ -1,27 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@latest/custom.min.css");
 
-/* Define Table Borders */
-table.mytable {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-table.mytable td {
-  text-align: center;
-  vertical-align: middle;
-  border-color: hsl(219, 7%, 91%);
-  border-style: solid;
-  border-width: 1px;
-}
-
-table.mytable th {
-  text-align: center;
-  vertical-align: middle;
-  border-color: hsl(219, 7%, 91%);
-  border-style: solid;
-  border-width: 1px;
-}
-
 /* Nord Theme */
 
 :root {
@@ -1547,4 +1525,26 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
 .page-reference:hover {
   background: var(--ls-primary-background-color);
   color: var(--bg-red-500);
+}
+
+/* Define Table Borders */
+.table-auto {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-auto th {
+  text-align: center;
+  vertical-align: middle;
+  border-color: var(--ls-border-color);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.table-auto td {
+  text-align: center;
+  vertical-align: middle;
+  border-color: var(--ls-border-color);
+  border-style: solid;
+  border-width: 1px;
 }
