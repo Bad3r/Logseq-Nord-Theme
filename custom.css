@@ -1543,3 +1543,8 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
   --tw-text-opacity: 1;
   color: var(--bg-grey-400);
 }
+
+.page-reference:hover {
+  background: var(--ls-primary-background-color);
+  color: var(--bg-red-500);
+}
