@@ -1477,8 +1477,6 @@ html[data-theme="dark"] {
 
 /* misc */
 
-
-
 .dark .dark\:text-gray-100 {
   --tw-text-opacity: 1;
   color: var(--bg-grey-100);
@@ -1512,10 +1510,16 @@ html[data-theme="dark"] {
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
 }
 
+.cp__file-sync-indicator-progress-pane > .a,
+.cp__file-sync-indicator-progress-pane > .c,
+.cp__file-sync-indicator-progress-pane > .b .bl,
 html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .a,
-html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
+html[data-theme="light"]
+  html[data-theme="light"]
+  .cp__file-sync-indicator-progress-pane
+  > .c {
   --tw-text-opacity: 1;
-  color: var(--ls-secondary-text-color);
+  color: var(--ls-secondary-text-color) !important;
 }
 
 /* page reference & properties */
