@@ -1573,12 +1573,22 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
 }
 
 .page-property-key {
-  color: var(--ls-secondary-text-color);
+  color: #d8dee9;
 }
 
 .page-property-key:hover {
-  background: var(--ls-primary-background-color);
+  background: var(--ls-secondary-background-color);
   color: var(--ls-active-primary-color);
+  border-radius: 8px;
+  margin: 0px 0;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1),
+    0 2px 4px -2px rgba(16, 24, 40, 0.06);
 }
 
 .text-gray-500 {
@@ -1587,8 +1597,16 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
 }
 
 .page-reference:hover {
-  background: var(--ls-primary-background-color);
-  color: var(--bg-red-500);
+  background: var(--bg-grey-50);
+}
+
+body[data-awpr-page-props-icons]
+  .block-properties.page-properties
+  .page-property-key:before,
+body[data-awpr-block-props-icons]
+  .block-properties:not(.page-properties)
+  .page-property-key:before {
+  color: var(--color-grey-50);
 }
 
 /* Define Table Borders */
