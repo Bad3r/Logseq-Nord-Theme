@@ -1053,7 +1053,7 @@ a.priority[href="#/page/C" i]:before {
 .textLayer .highlight {
   margin: -1px;
   padding: 1px;
-  background-color: var(--bg-pink-500);
+  background-color: rgba(180, 0, 170, 1);
   border-radius: 4px;
 }
 
@@ -1277,6 +1277,13 @@ button:not(.active):hover {
   color: hsl(219, 28%, 88%);
   box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1),
     0 2px 4px -2px rgba(16, 24, 40, 0.06);
+}
+
+.dashboard-card-title {
+  background-color: var(--ls-secondary-background-color);
+  border-bottom: 1px solid var(--ls-border-color);
+  font-size: 16px;
+  gap: 4px;
 }
 
 .dashboard-create-card {
@@ -1581,5 +1588,9 @@ mark {
 }
 
 .bg-error {
-  background: var(--ls-primary-background-color);
+  background: var(--ls-error-background-color) !important;
+  border-width: 2px;
+  border-color: var(--ct-error-color);
+  padding-top: 3px;
+  margin-bottom: 3px;
 }
