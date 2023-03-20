@@ -1514,10 +1514,8 @@ html[data-theme="dark"] {
 .cp__file-sync-indicator-progress-pane > .c,
 .cp__file-sync-indicator-progress-pane > .b .bl,
 html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .a,
-html[data-theme="light"]
-  html[data-theme="light"]
-  .cp__file-sync-indicator-progress-pane
-  > .c {
+html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .b .bl,
+html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
   --tw-text-opacity: 1;
   color: var(--ls-secondary-text-color) !important;
 }
@@ -1580,4 +1578,8 @@ html[data-theme="light"]
 mark {
   background: var(--ls-highlight-color-yellow) !important;
   color: var(--ls-primary-background-color) !important;
+}
+
+.bg-error {
+  background: var(--ls-primary-background-color);
 }
