@@ -1574,3 +1574,10 @@ html[data-theme="light"]
     color: var(--ls-primary-text-color);
   }
 }
+
+/* mark */
+
+mark {
+  background: var(--ls-highlight-color-yellow) !important;
+  color: var(--ls-primary-background-color) !important;
+}
