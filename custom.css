@@ -375,11 +375,13 @@ a.priority[href="#/page/C" i]:before {
 .cm-s-solarized div.CodeMirror-selected {
   background: #434c5e !important;
 }
+
 .cm-s-solarized .CodeMirror-line::selection,
 .cm-s-solarized .CodeMirror-line > span::selection,
 .cm-s-solarized .CodeMirror-line > span > span::selection {
   background: #3b4252 !important;
 }
+
 .cm-s-solarized .CodeMirror-line::-moz-selection,
 .cm-s-solarized .CodeMirror-line > span::-moz-selection,
 .cm-s-solarized .CodeMirror-line > span > span::-moz-selection {
@@ -390,9 +392,11 @@ a.priority[href="#/page/C" i]:before {
   background: #2e3440 !important;
   border-right: 0px;
 }
+
 .cm-s-solarized .CodeMirror-guttermarker {
   color: #4c566a !important;
 }
+
 .cm-s-solarized .CodeMirror-guttermarker-subtle {
   color: #4c566a !important;
 }
@@ -431,12 +435,15 @@ a.priority[href="#/page/C" i]:before {
 .cm-s-solarized .cm-comment.cm-attribute {
   color: #97b757 !important;
 }
+
 .cm-s-solarized .cm-comment.cm-def {
   color: #bc9262 !important;
 }
+
 .cm-s-solarized .cm-comment.cm-tag {
   color: #bc6283 !important;
 }
+
 .cm-s-solarized .cm-comment.cm-type {
   color: #5998a6 !important;
 }
@@ -1424,15 +1431,19 @@ html[data-theme="dark"] {
 .textLayer .highlight.selected {
   background-color: var(--bg-green-500);
 }
+
 .textLayer ::-moz-selection {
   background: var(--bg-blue-500);
 }
+
 .textLayer ::selection {
   background: var(--bg-blue-500);
 }
+
 .textLayer br::-moz-selection {
   background: 0 0;
 }
+
 .textLayer br::selection {
   background: 0 0;
 }
@@ -1465,14 +1476,19 @@ html[data-theme="dark"] {
 }
 
 /* misc */
+
+
+
 .dark .dark\:text-gray-100 {
   --tw-text-opacity: 1;
   color: var(--bg-grey-100);
 }
+
 .dark .dark\:text-gray-200 {
   --tw-text-opacity: 1;
   color: var(--bg-grey-100);
 }
+
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: var(--bg-grey-100);
@@ -1547,4 +1563,10 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
   border-color: var(--ls-border-color);
   border-style: solid;
   border-width: 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .preboot-loading {
+    color: var(--ls-primary-text-color);
+  }
 }
