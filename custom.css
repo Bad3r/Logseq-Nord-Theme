@@ -1735,3 +1735,44 @@ blockquote {
 .cp__right-sidebar .embed-page {
   background: var(--ls-primary-background-color);
 }
+
+/* Query Builder */
+.query-builder-clause {
+  background: var(--ls-primary-background-color);
+}
+
+.query-builder-clause:hover {
+  background: var(--ls-secondary-background-color);
+  transition: all 0.3s ease;
+}
+
+.border {
+  border-width: 1.5px;
+  border-color: var(--ls-border-color);
+}
+
+.cp__query-builder a.add-filter,
+.cp__query-builder a.query-clause {
+  color: var(--ph-link-color);
+}
+
+.cp__query-builder a.add-filter:hover,
+.cp__query-builder a.query-clause:hover {
+  color: var(--ls-primary-text-color);
+  transition: all 0.3s ease;
+}
+
+.cp__query-builder-filter {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.query-clause {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  transition: all 0.3s ease;
+  margin-left: 2px;
+}
