@@ -2,6 +2,10 @@
 
 A beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nordtheme.com/) color palette. It provides a clean, minimal, and professional look to your Logseq graph.
 
+> **Warning**
+>
+> Please note that the images may not be up-to-date.
+
 ![logseq_nord_code](https://cdn.unsigned.sh/logseq_nord_code.png)
 ![logseq_nord_demo](https://cdn.unsigned.sh/logseq_nord_demo.png)
 ![logseq_nord_pdf](https://cdn.unsigned.sh/logseq_nord_pdf.png)
@@ -17,6 +21,10 @@ A beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nor
 ## Installation
 
 ### Logseq Marketplace
+
+> **Warning**
+>
+> Not available yet.
 
 1. Open the Logseq Marketplace
 2. Click on the "Themes" tab
