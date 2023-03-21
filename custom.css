@@ -1578,23 +1578,26 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
   color: var(--ls-link-ref-text-color);
 }
 
+.page-ref:hover {
+  color: var(--ls-active-secondary-color);
+  background-color: var(--ls-primary-background-color);
+}
+
+.page-reference {
+  border-radius: 0;
+}
+
 .page-property-key {
   color: #d8dee9;
 }
 
-.page-property-key:hover {
-  background: var(--ls-secondary-background-color);
-  color: var(--ls-active-primary-color);
-  border-radius: 8px;
-  margin: 0px 0;
-  cursor: pointer;
-  transition: all ease-in 0.2s;
-  -webkit-transition: all ease-in 0.2s;
-  -moz-transition: all ease-in 0.2s;
-  -ms-transition: all ease-in 0.2s;
-  -o-transition: all ease-in 0.2s;
-  box-shadow: 0 4px 8px -2px rgba(16, 24, 40, 0.1),
-    0 2px 4px -2px rgba(16, 24, 40, 0.06);
+.page-property-key:hover,
+.page-reference:hover,
+.block-properties .page-property-value .mr-1:hover,
+.references-blocks .page-reference:hover,
+.references-blocks .page-ref:hover {
+  background: var(--ls-primary-background-color);
+  color: var(--ls-active-secondary-color);
 }
 
 .text-gray-500 {
@@ -1602,10 +1605,7 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
   color: var(--bg-grey-400);
 }
 
-.page-reference:hover {
-  background: var(--bg-grey-50);
-}
-
+/* Awesome page properties plugin */
 body[data-awpr-page-props-icons]
   .block-properties.page-properties
   .page-property-key:before,
@@ -1613,6 +1613,18 @@ body[data-awpr-block-props-icons]
   .block-properties:not(.page-properties)
   .page-property-key:before {
   color: var(--color-grey-50);
+}
+
+/* block & page properties */
+.block-properties,
+.block-properties.page-properties {
+  border-color: var(--ls-secondary-background-color) !important;
+  background-color: var(--ls-primary-background-color) !important;
+  border-radius: 4px;
+  border-width: 2px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  margin-top: 6px;
 }
 
 /* Define Table Borders */
