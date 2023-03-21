@@ -1721,3 +1721,9 @@ blockquote {
   text-indent: 0;
   border-radius: 2px;
 }
+
+/* GPT3 plugin */
+.bg-accent-dark {
+  --tw-bg-opacity: 1;
+  background-color: #3b4252;
+}
