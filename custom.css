@@ -1421,6 +1421,15 @@ html[data-theme="dark"] {
   --tw-text-opacity: 1;
   color: hsl(218, 27%, 74%);
 }
+.cp__all_pages_table th,
+.cp__all_pages_table td {
+  border-width: 0px !important;
+}
+
+.cp__all_pages_table {
+  border-width: 2px;
+  border-color: var(--ls-border-color);
+}
 
 /* excalidraw */
 .excalidraw,
