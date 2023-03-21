@@ -314,19 +314,24 @@ progress {
 a[priority="A"]::before,
 a.priority[href="#/page/A" i]:before {
   background: var(--ct-warning-color);
-  color: var(--ls-secondary-text-color);
+  color: var(--ls-primary-background-color);
+  border-color: var(--ls-border-color);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 a[priority="B"]::before,
 a.priority[href="#/page/B" i]:before {
   background: var(--ct-highlight-color);
-  color: var(--ls-secondary-text-color);
+  color: var(--ls-primary-background-color);
+  border-color: var(--ls-border-color);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 a[priority="C"]::before,
 a.priority[href="#/page/C" i]:before {
-  background: var(--ct-success-color);
-  color: var(--ls-secondary-text-color);
+  color: var(--ls-primary-background-color);
+  border-color: var(--ls-border-color);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .graph-filters {
