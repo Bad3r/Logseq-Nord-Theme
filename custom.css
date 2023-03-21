@@ -1727,3 +1727,11 @@ blockquote {
   --tw-bg-opacity: 1;
   background-color: #3b4252;
 }
+
+/* block & page embed */
+.embed-block,
+.cp__right-sidebar .embed-block,
+.embed-page,
+.cp__right-sidebar .embed-page {
+  background: var(--ls-primary-background-color);
+}
