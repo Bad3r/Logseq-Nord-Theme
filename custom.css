@@ -240,7 +240,7 @@ html[data-theme="dark"] {
   --ls-success-background-color: rgba(46, 52, 64, 1);
   --ls-focus-ring-color: rgba(18, 98, 119, 0.5);
   --ls-header-button-background: rgba(216, 222, 233, 1);
-  --ls-secondary-border-color: rgba(94, 129, 172, 1);
+  --ls-secondary-border-color: var(--ls-border-color);
   --ls-tertiary-border-color: rgba(0, 2, 0, 0.1);
   --ls-block-properties-background-color: rgba(48, 54, 67, 1);
   --ls-block-ref-link-text-color: rgba(136, 192, 208, 1);
