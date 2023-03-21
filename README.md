@@ -12,11 +12,11 @@ A beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nor
 
 ## Features
 
-* Clean and minimal design
-* Nord color palette for a consistent and pleasing aesthetic
-* Improved readability and navigation
-* Support for whiteboards, codeblocks, PDF reader, and other Logseq features
-* Customized styles for tables, blockquotes, code blocks, and more
+- Clean and minimal design
+- Nord color palette for a consistent and pleasing aesthetic
+- Improved readability and navigation
+- Support for whiteboards, codeblocks, PDF reader, and other Logseq features
+- Customized styles for tables, blockquotes, code blocks, and more
 
 ## Installation
 
