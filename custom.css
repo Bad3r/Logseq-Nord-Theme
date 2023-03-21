@@ -1707,3 +1707,17 @@ textarea:focus {
   color: var(--ls-secondary-text-color);
   border-color: var(--ls-border-color);
 }
+
+/* blockquote */
+blockquote {
+  background-color: var(--ls-page-blockquote-bg-color);
+  border-left: 4px solid;
+  border-left-color: var(--ls-page-blockquote-border-color);
+  color: var(--ls-page-blockquote-color);
+  display: block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 8px 20px;
+  text-indent: 0;
+  border-radius: 2px;
+}
