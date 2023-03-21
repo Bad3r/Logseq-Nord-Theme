@@ -1703,7 +1703,7 @@ textarea:focus {
 
 .ml-1 {
   margin-left: 0.25rem;
-  background: var(--ls-secondary-background-color);
+  background: transparent;
   color: var(--ls-secondary-text-color);
   border-color: var(--ls-border-color);
 }
