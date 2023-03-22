@@ -1,5 +1,16 @@
 /* Based on Dev theme by @pengx17 */
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@latest/custom.min.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+/* swap font for IBM Plex family */
+:root {
+  --ct-text-size: 16px;
+  --ct-line-height: 1.6;
+  --ls-font-family: "Only Emoji", "IBM Plex Sans", sans-serif;
+  --ct-page-title-font-family: var(--ls-font-family);
+  --ct-code-font-family: "IBM Plex Mono", monospace;
+}
 
 /* Nord Theme */
 
@@ -1421,6 +1432,7 @@ html[data-theme="dark"] {
   --tw-text-opacity: 1;
   color: hsl(218, 27%, 74%);
 }
+
 .cp__all_pages_table th,
 .cp__all_pages_table td {
   border-width: 0px !important;
