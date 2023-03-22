@@ -1,15 +1,25 @@
 /* Based on Dev theme by @pengx17 */
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@latest/custom.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://www.monolisa.dev/api/fonts/preview");
 
-/* swap font for IBM Plex family */
 :root {
-  --ct-text-size: 16px;
+  --ct-text-size: 15px;
   --ct-line-height: 1.6;
-  --ls-font-family: "Only Emoji", "IBM Plex Sans", sans-serif;
+  --ls-font-family: "Only Emoji", "ML", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
-  --ct-code-font-family: "IBM Plex Mono", monospace;
+  --ct-code-font-family: var(--ls-font-family);
+  --ls-font-weight: 400;
+  --ls-font-style: normal;
+  --ls-font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1, "ss05" 1, "ss06" 1,
+    "zero", "onum";
+}
+
+/* Apply font settings to all elements */
+* {
+  font-family: var(--ls-font-family);
+  font-weight: var(--ls-font-weight);
+  font-style: var(--ls-font-style);
+  font-feature-settings: var(--ls-font-feature-settings);
 }
 
 /* Nord Theme */
@@ -1819,6 +1829,7 @@ blockquote {
 /* page title */
 h1.title {
   color: #8fbcbb;
+  font-weight: 500;
 }
 
 /* Copy Code plugin */
