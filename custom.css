@@ -1785,3 +1785,8 @@ blockquote {
   transition: all 0.3s ease;
   margin-left: 2px;
 }
+
+/* page title */
+h1.title {
+  color: #8fbcbb;
+}
