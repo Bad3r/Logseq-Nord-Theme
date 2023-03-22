@@ -1,6 +1,6 @@
 /* Based on Dev theme by @pengx17 */
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@latest/custom.min.css");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 /* swap font for IBM Plex family */
@@ -1819,4 +1819,10 @@ blockquote {
 /* page title */
 h1.title {
   color: #8fbcbb;
+}
+
+/* Copy Code plugin */
+
+#logseq-copy-code-plugin--copy-code-641ac40f-e25b-4aca-bb32-90827492c4ba {
+  right: 0.25em;
 }
