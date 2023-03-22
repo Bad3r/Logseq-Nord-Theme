@@ -1786,6 +1786,24 @@ blockquote {
   margin-left: 2px;
 }
 
+.text-gray-900 {
+  color: #e5e9f0 !important;
+}
+
+.cp__query-builder .filter-item {
+  border: none;
+  font-size: 12px;
+  height: 1;
+  max-height: 1px;
+  line-height: 0.5;
+  margin-bottom: 20px;
+  padding: 0 !important;
+}
+
+.pl-6.form-select {
+  padding: 0.2rem 2.5rem 0.2rem 0.75rem;
+}
+
 /* page title */
 h1.title {
   color: #8fbcbb;
