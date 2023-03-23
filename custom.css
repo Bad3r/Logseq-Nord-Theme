@@ -1824,6 +1824,13 @@ blockquote {
   background-color: var(--ls-primary-background-color) !important;
 }
 
+.ui__button.logseq.load-unpacked,
+.ui__button.logseq.contribute,
+.ui__button.link.more-do,
+.ui__button.link.sort-or-filter-by {
+  background: none !important;
+}
+
 /* disable light-mode */
 .mode-light {
   background: var(--ls-primary-background-color) !important;
