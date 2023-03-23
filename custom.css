@@ -14,16 +14,7 @@
     "zero", "onum";
 }
 
-/* Apply font settings to all elements */
-* {
-  font-family: var(--ls-font-family);
-  font-weight: var(--ls-font-weight);
-  font-style: var(--ls-font-style);
-  font-feature-settings: var(--ls-font-feature-settings);
-}
-
 /* Nord Theme */
-
 :root {
   --bg-black: hsl(220, 28%, 18%);
   --bg-white: hsl(218, 3%, 96%);
@@ -387,16 +378,11 @@ a.priority[href="#/page/C" i]:before {
 /* CodeMirror */
 /* Color scheme for code-mirror */
 .cm-s-solarized.CodeMirror,
+.cm-s-solarized.cm-s-light,
 .cm-s-solarized.cm-s-dark {
   color: #d8dee9 !important;
   background-color: #2e3440 !important;
   text-shadow: #2e3440 0 1px !important;
-}
-
-.cm-s-solarized.cm-s-light {
-  background-color: #f0f3f7 !important;
-  color: #434c5e !important;
-  text-shadow: #eceff4 0 1px !important;
 }
 
 .cm-s-solarized div.CodeMirror-selected {
@@ -417,7 +403,7 @@ a.priority[href="#/page/C" i]:before {
 
 .cm-s-solarized .CodeMirror-gutters {
   background: #2e3440 !important;
-  border-right: 0px;
+  border-right: 0;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker {
@@ -429,11 +415,13 @@ a.priority[href="#/page/C" i]:before {
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber,
+.cm-s-solarized.cm-s-light .CodeMirror-linenumber,
 .cm-s-solarized .CodeMirror-linenumber {
   color: #7b88a1 !important;
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters,
+.cm-s-solarized.cm-s-light .CodeMirror-gutters,
 .cm-s-solarized .CodeMirror-gutters {
   background: var(--ls-primary-background-color) !important;
 }
@@ -1009,7 +997,7 @@ a.priority[href="#/page/C" i]:before {
   border: 2px solid var(--ls-border-color);
   border-radius: 4px;
   color: var(--ls-secondary-text-color);
-  flex: 1 1 0%;
+  flex: 1 1 0;
   outline: 0;
   padding: 1px 5px;
 }
@@ -1306,7 +1294,6 @@ button:not(.active):hover {
 /* 
  * whiteboards
  */
-
 :root {
   --ls-wb-stroke-color-gray: var(--bg-gray-800);
   --ls-wb-stroke-color-red: var(--bg-red-800);
@@ -1333,7 +1320,7 @@ button:not(.active):hover {
 .dashboard-card:hover {
   border: solid 2px var(--bg-blue-800);
   border-radius: 8px;
-  margin: 0px 0;
+  margin: 0;
   cursor: pointer;
   transition: all ease-in 0.2s;
   -webkit-transition: all ease-in 0.2s;
@@ -1445,7 +1432,7 @@ html[data-theme="dark"] {
 
 .cp__all_pages_table th,
 .cp__all_pages_table td {
-  border-width: 0px !important;
+  border-width: 0 !important;
 }
 
 .cp__all_pages_table {
@@ -1465,7 +1452,7 @@ html[data-theme="dark"] {
   --button-gray-3: var(--bg-grey-700) !important;
   --button-special-active-bg-color: var(--ls-secondary-background-color);
   --dialog-border-color: var(--ls-secondary-background-color) !important;
-  --dropdown-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path fill="#23f03e3e" d="M287 197 159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>') !important;
+  --dropdown-icon: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path fill="#23f03e3e" d="M287 197 159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>') !important;
   --focus-highlight-color: var(--bg-blue-500) !important;
   --icon-fill-color: var(--ls-primary-text-color) !important;
   --icon-green-fill-color: var(--bg-green-500) !important;
@@ -1532,7 +1519,7 @@ html[data-theme="dark"] {
 }
 
 :root {
-  --annotation-unfocused-field-background: url('data:image/svg+xml;charset=utf-8,<svg width="1" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0,54,255,.13)"/></svg>');
+  --annotation-unfocused-field-background: url('data:image/svg+xml;charset=utf-8, <svg width="1" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0, 54, 255, .13)"/></svg>');
 }
 
 .annotationLayer .buttonWidgetAnnotation.pushButton > a:hover,
@@ -1718,7 +1705,7 @@ mark {
 select:focus,
 textarea:focus {
   --tw-ring-inset: var(--tw-empty);
-  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-width: 0;
   --tw-ring-offset-color: #d8dee9;
   --tw-ring-color: #81a1c1;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
@@ -1826,14 +1813,109 @@ blockquote {
   padding: 0.2rem 2.5rem 0.2rem 0.75rem;
 }
 
+/* button */
+
+.ui__button {
+  background-color: var(--ls-secondary-background-color) !important;
+  border-color: var(--ls-border-color) !important;
+}
+
+.ui__button:hover {
+  background-color: var(--ls-primary-background-color) !important;
+}
+
+/* disable light-mode */
+.mode-light {
+  background: var(--ls-primary-background-color) !important;
+  border-color: var(--ls-border-color) !important;
+  display: none !important;
+}
+
+.theme-modes-options li:first-child strong {
+  display: none;
+}
+
+.theme-modes-options li:nth-child(3) {
+  display: none;
+}
+
 /* page title */
 h1.title {
   color: #8fbcbb;
-  font-weight: 500;
+  font-weight: 600;
+  font-style: bold;
+  font-feature-settings: var(--ls-font-feature-settings);
 }
 
 /* Copy Code plugin */
 
 #logseq-copy-code-plugin--copy-code-641ac40f-e25b-4aca-bb32-90827492c4ba {
   right: 0.25em;
+}
+
+/*
+ * tocgen plugin CSS
+ * https://github.com/sethyuan/logseq-plugin-tocgen/blob/master/README.en.md
+*/
+.kef-tocgen-page {
+  cursor: pointer;
+  line-height: 2;
+}
+
+.kef-tocgen-block {
+  line-height: 1.7;
+}
+
+.kef-tocgen-active-block {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.kef-tocgen-noactivepage::before {
+  content: "\e1d2";
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
+/* URL+ Plugin */
+.bg-base-100 {
+  background-color: #3b4252;
+}
+
+/* Show external link URLs on hover */
+/* Desktop devices only */
+@media (min-width: 768px) {
+  a.external-link {
+    position: relative;
+  }
+
+  a.external-link::after {
+    content: attr(href);
+    font-size: 0.8em;
+    display: block;
+    position: absolute;
+    background-color: var(--ls-secondary-background-color);
+    color: var(--ls-external-link-color);
+    z-index: 9999;
+    pointer-events: none;
+    padding: 0.3em 0.6em;
+    border-radius: 0.2em;
+    opacity: 0;
+    transition: opacity 300ms 600ms;
+    border-color: var(--ls-border-color);
+    border-width: 2px;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    margin-top: 0.3em;
+  }
+
+  a.external-link:hover {
+    opacity: 1;
+  }
+
+  a.external-link:hover::after {
+    opacity: 1 !important;
+    transition: opacity 500ms 200ms;
+  }
 }
