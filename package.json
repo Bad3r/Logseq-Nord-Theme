@@ -1,18 +1,19 @@
 {
-  "name": "nord-theme",
-  "author": "Bad3r",
-  "version": "0.1",
-  "description": "Logseq in an arctic, north-bluish color palette 🧊",
-  "repo": "Bad3r/Logseq-Nord-Theme",
-  "license": "MIT",
-  "logseq": {
-    "themes": [
-      {
-        "name": "Nord Theme",
-        "url": "./custom.css"
-      }
-    ],
-    "id": "nord-theme",
-    "icon": "./logo.png"
-  }
+    "name": "nord-theme",
+    "author": "Bad3r",
+    "version": "0.1",
+    "description": "Logseq in an arctic, north-bluish color palette 🧊",
+    "repo": "Bad3r/Logseq-Nord-Theme",
+    "license": "MIT",
+    "homepage": "https://nordtheme.com",
+    "logseq": {
+        "themes": [
+            {
+                "name": "Nord Theme",
+                "url": "./custom.css"
+            }
+        ],
+        "id": "nord-theme",
+        "icon": "./logo.png"
+    }
 }

@@ -1,3 +1,4 @@
 .dccache
-.clj-kondo/*
-.lsp/*
+.clj-kondo
+.lsp
+.trunk
