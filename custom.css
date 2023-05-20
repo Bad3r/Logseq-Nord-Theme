@@ -1074,7 +1074,6 @@ a.priority[href="#/page/C" i]:before {
 }
 .extensions__pdf-container[data-theme="light"]
     .extensions__pdf-hls-area-region {
-    mix-blend-mode: revert;
     opacity: 0.4;
 }
 
@@ -1466,11 +1465,11 @@ button:not(.active):hover {
     border-radius: 8px;
     margin: 0px 0;
     cursor: pointer;
-    transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
     -moz-transition: all ease-in 0.2s;
     -ms-transition: all ease-in 0.2s;
     -o-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
     color: hsl(219, 28%, 88%);
     box-shadow: 0 4px 8px -2px hsla(220, 43%, 11%, 0.1),
         0 2px 4px -2px hsla(220, 43%, 11%, 0.06);
@@ -2329,4 +2328,8 @@ body
 
 #radix-21 > div > div.flex.items-center.tl-custom-color > label {
     display: none;
+}
+
+.sidebar-item-list {
+    background: var(--ls-primary-background-color);
 }
