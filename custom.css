@@ -1053,28 +1053,31 @@ a.priority[href="#/page/C" i]:before {
     --ph-highlight-scroll-into-color: hsl(14, 51%, 63%);
 }
 
-.extensions__pdf-container[data-theme="light"],
-.extensions__pdf-container[data-theme="dark"] {
-    background-color: var(--ls-primary-background-color);
+.extensions__pdf-container[data-theme="dark"] .textLayer,
+.extensions__pdf-container[data-theme="light"] .textLayer {
+    background-color: var(--ls-secondary-background-color);
+    filter: invert(100%);
 }
 
-.extensions__pdf-container[data-theme="light"] {
-    background-color: #042f3c;
-}
+.extensions__pdf-container[data-theme="dark"] .pdfViewer,
 .extensions__pdf-container[data-theme="light"] .pdfViewer {
     background: 0 0;
     filter: invert(100%);
 }
-.extensions__pdf-container[data-theme="light"] .textLayer {
-    background-color: #023d4cf7;
-    filter: invert(100%);
-}
+
+.extensions__pdf-container[data-theme="dark"] .extensions__pdf-toolbar,
 .extensions__pdf-container[data-theme="light"] .extensions__pdf-toolbar {
-    background: linear-gradient(0deg, hsla(0, 0%, 100%, 0) 10%, #0f1f25);
+    background: linear-gradient(
+        0deg,
+        hsla(0, 0%, 100%, 0) 10%,
+        var(--ls-primary-background-color)
+    );
 }
-.extensions__pdf-container[data-theme="light"]
-    .extensions__pdf-hls-area-region {
-    opacity: 0.4;
+
+.extensions__pdf-container[data-theme="dark"],
+.extensions__pdf-container[data-theme="light"],
+.extensions__pdf-hls-area-region {
+    opacity: 1;
 }
 
 .extensions__pdf-container *[data-color="yellow"] {
