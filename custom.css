@@ -2336,3 +2336,28 @@ body
 .sidebar-item-list {
     background: var(--ls-primary-background-color);
 }
+
+.cm-s-markdown.CodeMirror {
+    background: #2e3440;
+    color: #4c566a;
+}
+
+.bg-\[\#1d262f\] {
+    background-color: #2e3440;
+}
+
+.border-gray-600 {
+    border-color: #4c566a;
+}
+
+.text-gray-300 {
+    color: #d8dee9;
+}
+
+.cm-s-markdown .CodeMirror-gutters {
+    background: #2e3440;
+}
+
+.cm-s-markdown pre.CodeMirror-line {
+    color: #eceff4;
+}
