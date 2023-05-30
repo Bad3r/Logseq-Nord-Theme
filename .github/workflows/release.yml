@@ -30,7 +30,7 @@ jobs:
 
       - name: Create ZIP Archive
         run: |
-          zip logseq-nord-theme-${{ steps.create_tag.outputs.new_tag }}.zip custom.css icon.svg package.json
+          zip logseq-nord-theme.zip custom.css icon.svg package.json
 
       - name: GH Release
         uses: softprops/action-gh-release@v0.1.15
