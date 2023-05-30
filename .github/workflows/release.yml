@@ -1,0 +1,45 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: '0'
+        
+      - name: Bump version and push tag
+        id: create_tag
+        uses: anothrNick/github-tag-action@1.64.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: false
+          PRERELEASE: true
+          DEFAULT_BUMP: patch
+
+      - name: Create ZIP Archive
+        run: |
+          zip release-${{ steps.create_tag.outputs.new_tag }}.zip custom.css icon.svg package.json
+
+      - name: GH Release
+        uses: softprops/action-gh-release@v0.1.15
+        with:
+          name: Release ${{ steps.create_tag.outputs.new_tag }}
+          tag_name:  ${{ steps.create_tag.outputs.new_tag }}
+          draft: false
+          prerelease: true
+          files: release-${{ steps.create_tag.outputs.new_tag }}.zip
+          repository: Bad3r/Logseq-Nord-Theme
+          token: ${{ secrets.GITHUB_TOKEN }}
+          generate_release_notes: true
