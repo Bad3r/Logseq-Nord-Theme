@@ -1,4 +1,4 @@
-name: Create Release
+name: Create Release 🚀
 
 on:
   workflow_dispatch:
@@ -25,12 +25,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: false
-          PRERELEASE: true
+          PRERELEASE: false
           DEFAULT_BUMP: patch
 
       - name: Create ZIP Archive
         run: |
-          zip release-${{ steps.create_tag.outputs.new_tag }}.zip custom.css icon.svg package.json
+          zip logseq-nord-theme-${{ steps.create_tag.outputs.new_tag }}.zip custom.css icon.svg package.json
 
       - name: GH Release
         uses: softprops/action-gh-release@v0.1.15
@@ -38,7 +38,7 @@ jobs:
           name: Release ${{ steps.create_tag.outputs.new_tag }}
           tag_name:  ${{ steps.create_tag.outputs.new_tag }}
           draft: false
-          prerelease: true
+          prerelease: false
           files: release-${{ steps.create_tag.outputs.new_tag }}.zip
           repository: Bad3r/Logseq-Nord-Theme
           token: ${{ secrets.GITHUB_TOKEN }}
