@@ -39,7 +39,7 @@ jobs:
           tag_name:  ${{ steps.create_tag.outputs.new_tag }}
           draft: false
           prerelease: false
-          files: release-${{ steps.create_tag.outputs.new_tag }}.zip
+          files: logseq-nord-theme.zip
           repository: Bad3r/Logseq-Nord-Theme
           token: ${{ secrets.GITHUB_TOKEN }}
           generate_release_notes: true
