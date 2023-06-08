@@ -1,6 +1,6 @@
 # Logseq Nord Theme 🏔️
 
-A beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nordtheme.com/) color palette. It provides a clean, minimal, and professional look to your Logseq graph.
+Inspired by the serene beauty of the Arctic, this theme provides a calm, distraction-free environment that mirrors the tranquility of polar night landscapes.
 
 > **Warning**
 >
@@ -22,13 +22,9 @@ A beautiful and elegant theme for Logseq, inspired by the [Nord](https://www.nor
 
 ### Logseq Marketplace
 
-> **Warning**
->
-> Not available yet.
-
 1. Open the Logseq Marketplace
 2. Click on the "Themes" tab
-3. Search for `Logseq Nord Theme`
+3. Search for `Nord Theme`
 4. Click on the "Install" button.
 
 ### Importing into `custom.css`
