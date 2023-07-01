@@ -2411,5 +2411,18 @@ body
   > .initial
   > div
   > .blocks-container {
-  background-color: hsl(var(--ls-primary-background-color), 0.25);
+  background-color: var(--ls-primary-background-color);
+}
+
+#root
+  > div
+  > main
+  > div.ui__modal
+  > div.ui__modal-panel.transform.transition-all.sm\:min-w-lg.sm.ease-out.duration-300.opacity-100.translate-y-0.sm\:scale-100.enter-done
+  > div.panel-content
+  > div
+  > div
+  > div.input-wrap
+  > input {
+  background-color: var(--ls-primary-background-color);
 }
