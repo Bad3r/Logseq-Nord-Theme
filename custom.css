@@ -92,6 +92,11 @@ body {
   font-style: var(--ls-font-style);
   font-feature-settings: var(--ls-font-feature-settings);
   line-height: var(--ct-line-height);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 i {
@@ -125,8 +130,14 @@ i {
   line-height: inherit;
 }
 
-/* Nord Theme */
+a.warning,
+div.warning:not(.admonitionblock),
+p.warning,
+span.warning {
+  display: none;
+}
 
+/* Nord Theme */
 :root {
   --bg-black: hsl(220, 28%, 18%);
   --bg-white: hsl(218, 3%, 96%);
@@ -388,6 +399,9 @@ html[data-theme="dark"] {
   --ls-header-bg-color: var(--ls-primary-background-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
   --ls-block-highlight-color: hsla(222, 16%, 28%, 0.85);
+  --logseq-og-left-sidebar-background: var(--ls-primary-background-color);
+  --logseq-og-left-sidebar-bottom-gradient: none;
+  --logseq-og-journal-page-rule: #3b4252;
 }
 
 .cp__header,
@@ -2356,4 +2370,13 @@ body
 
 .cm-s-markdown pre.CodeMirror-line {
   color: #eceff4;
+}
+
+.left-sidebar-inner .nav-content-item .bd ul li {
+  margin-left: 10px !important;
+}
+
+.dark-theme textarea,
+.light-theme textarea {
+  background: var(--ls-primary-background-color) !important;
 }
