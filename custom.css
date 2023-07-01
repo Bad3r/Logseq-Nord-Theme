@@ -2380,3 +2380,36 @@ body
 .light-theme textarea {
   background: var(--ls-primary-background-color) !important;
 }
+
+.light-theme
+  :is(.lazy-visibility, .lazy-visibility > .fade-enter)
+  .color-level
+  > .flex.flex-col
+  > .initial
+  > div
+  > .blocks-container,
+.dark-theme
+  :is(.lazy-visibility, .lazy-visibility > .fade-enter)
+  .color-level
+  > .flex.flex-col
+  > .initial
+  > div
+  > .blocks-container,
+.light-theme
+  .cp__right-sidebar
+  .references.page-linked
+  .color-level
+  > .flex.flex-col
+  > .initial
+  > div
+  > .blocks-container,
+.dark-theme
+  .cp__right-sidebar
+  .references.page-linked
+  .color-level
+  > .flex.flex-col
+  > .initial
+  > div
+  > .blocks-container {
+  background-color: hsl(var(--ls-primary-background-color), 0.25);
+}
