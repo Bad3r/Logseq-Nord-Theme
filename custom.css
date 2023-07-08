@@ -139,6 +139,7 @@ span.warning {
 
 /* Nord Theme */
 :root {
+  --bg-color-2: hsl(221, 28%, 31%);
   --bg-black: hsl(220, 28%, 18%);
   --bg-white: hsl(218, 3%, 96%);
   --bg-grey-50: hsl(216, 17%, 52%);
@@ -2424,5 +2425,22 @@ body
   > div
   > div.input-wrap
   > input {
+  background-color: hsl(var(--ls-primary-background-color), 0.25);
+}
+
+.title .page-icon {
+    margin-right: 0.5em;
+}
+
+.menu-links-outer, .menu-links-wrapper, .dropdown-wrapper {
+    background-color: var(--ls-primary-background-color) !important;
+}
+.cp__sidebar-left-layout a {
   background-color: var(--ls-primary-background-color);
+}
+
+/* fix leftsidebar graph dropdown menu width */
+.left-sidebar-inner .dropdown-wrapper {
+    margin-top: 1px;
+    min-width: 214px;
 }
