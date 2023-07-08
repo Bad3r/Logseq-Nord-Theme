@@ -2437,3 +2437,17 @@ body
   margin-top: 1px;
   min-width: 214px;
 }
+
+.left-sidebar-inner .dropdown-wrapper .menu-link {
+  background-color: var(--ls-secondary-background-color);
+}
+
+.left-sidebar-inner .create #create-button {
+  background-color: transparent !important;
+}
+
+.left-sidebar-inner .create #create-button:hover {
+  background-color: transparent !important;
+  color: var(--ls-active-secondary-color) !important;
+  border: none;
+}
