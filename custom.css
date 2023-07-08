@@ -2425,22 +2425,25 @@ body
   > div
   > div.input-wrap
   > input {
-  background-color: hsl(var(--ls-primary-background-color), 0.25);
+  background-color: var(--ls-primary-background-color);
 }
 
 .title .page-icon {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
 }
 
-.menu-links-outer, .menu-links-wrapper, .dropdown-wrapper {
-    background-color: var(--ls-primary-background-color) !important;
-}
+.menu-links-outer,
+.menu-links-wrapper,
+.dropdown-wrapper,
+.cp__header a,
+.cp__header button,
+.cp__right-sidebar-topbar button,
 .cp__sidebar-left-layout a {
   background-color: var(--ls-primary-background-color);
 }
 
 /* fix leftsidebar graph dropdown menu width */
 .left-sidebar-inner .dropdown-wrapper {
-    margin-top: 1px;
-    min-width: 214px;
+  margin-top: 1px;
+  min-width: 214px;
 }
