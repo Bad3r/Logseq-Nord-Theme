@@ -2432,17 +2432,6 @@ body
   margin-right: 0.5em;
 }
 
-.left-sidebar-inner .create #create-button,
-.menu-links-outer,
-.menu-links-wrapper,
-.dropdown-wrapper,
-.cp__header a,
-.cp__header button,
-.cp__right-sidebar-topbar button,
-.cp__sidebar-left-layout a {
-  background-color: var(--ls-primary-background-color) !important;
-}
-
 /* fix leftsidebar graph dropdown menu width */
 .left-sidebar-inner .dropdown-wrapper {
   margin-top: 1px;
