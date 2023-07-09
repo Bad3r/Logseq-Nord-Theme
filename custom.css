@@ -2437,11 +2437,6 @@ body
   min-width: 214px;
 }
 
-.dropdown-wrapper .menu-link,
-.ui-items-container .toolbar-plugins-manager-trigger .menu-link {
-  background-color: var(--ls-secondary-background-color);
-}
-
 .dropdown-wrapper .menu-link:hover,
 .ui-items-container .toolbar-plugins-manager-trigger .menu-link:hover {
   background-color: var(--ls-quaternary-background-color);
