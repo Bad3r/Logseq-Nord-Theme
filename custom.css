@@ -2434,12 +2434,17 @@ body
 
 /* fix leftsidebar graph dropdown menu width */
 .left-sidebar-inner .dropdown-wrapper {
-  margin-top: 1px;
   min-width: 214px;
 }
 
-.left-sidebar-inner .dropdown-wrapper .menu-link {
+.dropdown-wrapper .menu-link,
+.ui-items-container .toolbar-plugins-manager-trigger .menu-link {
   background-color: var(--ls-secondary-background-color);
+}
+
+.dropdown-wrapper .menu-link:hover,
+.ui-items-container .toolbar-plugins-manager-trigger .menu-link:hover {
+  background-color: var(--ls-quaternary-background-color);
 }
 
 .left-sidebar-inner .create #create-button {
