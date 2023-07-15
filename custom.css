@@ -520,6 +520,19 @@ a.priority[href="#/page/C" i]:before {
   color: hsl(219, 28%, 88%) !important;
   background-color: hsl(220, 16%, 22%) !important;
   text-shadow: hsl(220, 16%, 22%) 0 1px !important;
+  box-shadow: none !important;
+  border: 2px solid var(--ls-border-color) !important;
+}
+
+.extensions__code-lang {
+  border: 2px solid var(--ls-border-color);
+  /* only bottom left corner is round */
+  border-radius: 0 0 0 8px;
+  padding: 4px;
+}
+
+.CodeMirror-lines {
+  padding: 4px;
 }
 
 .cm-s-solarized div.CodeMirror-selected {
@@ -540,7 +553,13 @@ a.priority[href="#/page/C" i]:before {
 
 .cm-s-solarized .CodeMirror-gutters {
   background: hsl(220, 16%, 22%) !important;
-  border-right: 0px;
+  /* border-right: 2px solid var(--ls-border-color) !important; */
+  padding-left: 4px;
+}
+
+.CodeMirror,
+.extensions__code-calc-output-line {
+  font-family: var(--ct-code-font-family) !important;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker {
@@ -1756,6 +1775,10 @@ html[data-theme="dark"] {
   color: hsl(218, 27%, 94%);
   margin-left: calc(0.5rem * (1 - var(--tw-space-x-reverse)));
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+}
+
+.cp__file-sync-related-normal-modal > .input-hints {
+  background: var(--ls-primary-background-color) !important;
 }
 
 .cp__file-sync-indicator-progress-pane > .a,
