@@ -1742,10 +1742,16 @@ html[data-theme="dark"] {
   color: var(--bg-grey-100);
 }
 
+/* Journal */
+#journals .journal-item {
+  border-top: 1px solid rgba(67, 76, 94, 0.5) !important;
+}
+
 /* left sidebar */
 
 .left-sidebar-inner {
-  background-color: var(--ls-primary-background-color);
+  background-color: var(--ls-primary-background-color) !important;
+  border-right: 1px solid rgba(67, 76, 94, 0.5);
 }
 
 /* Hide flashcards count */
