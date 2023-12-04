@@ -1799,6 +1799,11 @@ html[data-theme="light"] .cp__file-sync-indicator-progress-pane > .c {
 
 /* page reference & properties */
 
+.references-blocks-item {
+  background-color: var(--ls-primary-background-color) !important;
+  border: 1px solid var(--ls-border-color) !important;
+}
+
 .page-ref {
   color: var(--ls-link-ref-text-color);
 }
