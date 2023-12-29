@@ -1743,8 +1743,12 @@ html[data-theme="dark"] {
 }
 
 /* Journal */
-#journals .journal-item {
+.journals .journal-item {
   border-top: 1px solid rgba(67, 76, 94, 0.5) !important;
+}
+
+.journals .journal-item:first-child {
+  border-top: none !important;
 }
 
 /* left sidebar */
