@@ -1,6 +1,6 @@
 /* Based on Dev theme by @pengx17 */
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@latest/custom.min.css");
-@import url("https://www.monolisa.dev/api/fonts/preview");
+@import url("https://www.monolisa.dev/api/fonts/initial/latest");
 
 :root {
   --ls-tag-text-opacity: 0.8;
